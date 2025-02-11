@@ -1,0 +1,84 @@
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+	padding: 20px 0;
+	background-color: #131415;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav a {
+	color: #eee;
+	text-decoration: none;
+	text-align: center;
+}
+
+nav ul li button {
+	font-family: "Inter";
+	padding: 12px 16px;
+	border-radius: 5px;
+	outline: none;
+	background-color: var(--primary-blue);
+	cursor: pointer;
+	color: #fff;
+	font-weight: 600;
+	border: none;
+}
+
+.menu-toggle {
+	cursor: pointer;
+	color: #eee;
+}
+
+.locale-toggle {
+	cursor: pointer;
+	color: #eee;
+	display: flex;
+	align-items: center;
+}
+
+.locale-toggle .icon-lang {
+	font-size: 25px;
+	margin-right: 8px;
+}
+
+.profile-user {
+	display: flex;
+	align-items: center;
+}
+
+.profile-user .icon {
+	transform: translateY(2px);
+	margin-right: 5px;
+	/* font-size: 16px; */
+}
+
+.profile-user h4 {
+	margin-right: 10px;
+	color: #eee;
+	/* color: var(--font-color); */
+}
+
+nav ul li a:hover {
+	color: #4592ea;
+}
+
+nav ul li button:hover {
+	background-color: var(--primary-blue-hover);
+}
+
+nav ul li:not(:last-child) {
+	margin-right: 20px;
+}

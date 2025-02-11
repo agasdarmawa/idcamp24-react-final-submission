@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* import data theme css */
+@import url(./styles/theme.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: var(--background-color);
+	color: var(--font-color);
+}
+
+.content-container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.app-container {
+	color: var(--on-background);
+	background-color: var(--background);
+	min-height: 100vh;
+	transition: all ease-in-out 0.5s;
+}
+
+.header-search {
+	margin: 30px 0;
+}
+.header-search h2 {
+	margin-bottom: 8px;
+}
+
+.detail-page {
+	margin: 40px 0;
+}
+
+.detail-page__title {
+	font-size: 32px;
+	margin-bottom: 8px;
+	word-wrap: break-word;
+}
+
+.detail-page__createdAt {
+	color: var(--on-background-grey);
+}
+
+.detail-page__body {
+	line-height: 1.5;
+	margin-top: 36px;
+	font-size: 18px;
+}
+
+.detail-page__btns button:not(:last-child) {
+	margin-right: 8px;
+}
+
+.detail-page__btns {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.detail-page__btns button {
+	padding: 11px 16px;
+	border-radius: 5px;
+	outline: none;
+	min-width: 150px;
+	margin-top: 15px;
+	/* background-color: var(--primary-blue); */
+	cursor: pointer;
+	color: #fff;
+	font-weight: 600;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.detail-page__btns button.btn-delete {
+	background-color: var(--error);
+}
+
+.detail-page__btns button.btn-delete:not(:disabled):hover {
+	background-color: #d42142;
+}
+
+.detail-page__btns button.btn-archive {
+	background-color: var(--warning);
+}
+
+.detail-page__btns button.btn-archive:not(:disabled):hover {
+	background-color: #db8c0d;
+}
+
+.detail-page__btns button:disabled {
+	cursor: no-drop;
+	background-color: var(--btn-disabled);
+}
+
+/* .detail-page__btns button:not(:disabled):hover {
+	background-color: var(--primary-blue-hover);
+} */
+
+.not-found {
+	display: flex;
+	padding-top: 50px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.not-found img {
+	height: auto;
+	width: 400px;
+	object-fit: cover;
+}
+
+.not-found h2 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.not-found button {
+	padding: 12px 16px;
+	border-radius: 5px;
+	outline: none;
+	background-color: var(--primary-blue);
+	cursor: pointer;
+	color: #fff;
+	font-weight: 600;
+	border: none;
+}
+
+.not-found button:hover {
+	background-color: var(--primary-blue-hover);
+}

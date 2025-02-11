@@ -1,0 +1,27 @@
+:root {
+	--primary: #bb86fc;
+	--primary-variant: #3700b3;
+	--secondary: #03dac6;
+	--background: #121212;
+	--surface: #121212;
+	--error: #da3755;
+	--warning: #f39c12;
+	--on-background: #333333;
+	--on-background-grey: #a0a0a0;
+	--on-surface: #ffffff;
+	--primary-blue: #2366b2;
+	--primary-blue-hover: #19559a;
+	--input-background: #f0f0f0;
+	--input-form-background: #d7d7d7;
+	--btn-disabled: #9b9b9b;
+}
+
+[data-theme="dark"] {
+	--font-color: #eee;
+	--background-color: #090a0b;
+	--input-background: #1b1b20;
+	--on-background-grey: #c7c7c7;
+	--input-form-background: #eee;
+	--btn-disabled: #2f2f32;
+	--on-background: #ffffff;
+}

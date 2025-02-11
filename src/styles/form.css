@@ -1,0 +1,97 @@
+.wrapper-form {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.ctn-box-forms {
+	height: fit-content;
+	background-color: var(--input-background);
+	min-width: 500px;
+	padding: 25px;
+	border-radius: 6px;
+}
+
+.ctn-box-forms h2 {
+	margin-bottom: 5px;
+	font-weight: 800;
+}
+
+.ctn-box-forms p {
+	font-size: 14px;
+}
+
+.form-wrapper {
+	margin-top: 20px;
+}
+
+.ctn-box-forms div {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.ctn-box-forms div:not(:last-child) {
+	margin-bottom: 13px;
+}
+
+.ctn-box-forms label {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.ctn-box-forms input,
+.search-bar input,
+.ctn-box-forms textarea {
+	margin-top: 5px;
+	padding: 12px 14px;
+	outline: none;
+	border: none;
+	background-color: var(--input-form-background);
+	border-radius: 6px;
+	resize: vertical;
+}
+
+.search-bar input {
+	width: 100%;
+}
+
+.ctn-box-forms button {
+	padding: 12px 16px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	width: 100%;
+	outline: none;
+	background-color: var(--primary-blue);
+	cursor: pointer;
+	color: #fff;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
+
+.ctn-box-forms .icon-pass {
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	cursor: pointer;
+	color: #202020;
+}
+
+.ctn-box-forms button:disabled {
+	cursor: no-drop;
+	background-color: var(--btn-disabled);
+}
+
+.ctn-box-forms button:not(:disabled):hover {
+	background-color: var(--primary-blue-hover);
+}
+
+.ctn-box-forms a {
+	font-weight: 600;
+	color: var(--font-color);
+}
